@@ -1,37 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Dynamic Event Calendar
 
-First, run the development server:
+A dynamic event calendar built using Python. This application allows users to view, add, and manage events on a responsive and interactive calendar interface. The goal is to create an intuitive and flexible solution for scheduling and managing events.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Event Management**: Add, edit, and delete events with ease.
+- **Responsive Design**: Mobile-friendly and fully responsive UI.
+- **Dynamic Calendar**: View events in different calendar views, such as daily, weekly, and monthly.
+- **User-friendly Interface**: Clean and simple UI built with a Python backend (Flask/Django) and front-end technologies like React.
+- **Real-time updates**: The calendar updates dynamically as users add, edit, or remove events.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Backend**: Python (Flask or Django)
+- **Frontend**: React, Tailwind CSS
+- **Database**: SQLite, PostgreSQL, or any other database solution
+- **Deployment**: Vercel, Heroku, or any other platform of choice
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/abhijeetroyyy/Dynamic-Event-Calendar.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Navigate to the project directory:
 
-## Deploy on Vercel
+   ```bash
+   cd Dynamic-Event-Calendar
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Set up a virtual environment (optional but recommended):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Dynamic-Event-Calendar
+   ```bash
+   python3 -m venv venv
+   ```
+
+4. Activate the virtual environment:
+
+   - On Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - On Mac/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+5. Install the required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+6. Run the development server (assuming Flask):
+
+   ```bash
+   python app.py
+   ```
+
+   Or for Django:
+
+   ```bash
+   python manage.py runserver
+   ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
